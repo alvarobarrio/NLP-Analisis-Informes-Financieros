@@ -1,8 +1,6 @@
 ################################################################################
 
-#TFG 2020 ALVARO BARRIO HERNÁNDEZ
-
-#################### Loading Packages & Libraries ################################
+#################### 1. Loading Packages & Libraries ################################
 install.packages("dplyr")
 install.packages("ggplot2")
 install.packages("knitr")
@@ -54,8 +52,8 @@ library(tm)
 library(topicmodels)
 library(scales)
 
+#################### 2. Getting & Reading in HTML Letters ################################
 
-# Getting & Reading in HTML Letters
 urls_77_97 <- paste('http://www.berkshirehathaway.com/letters/', seq(1977, 1997), '.html', sep='')
 html_urls <- c(urls_77_97,
                'http://www.berkshirehathaway.com/letters/1998htm.html',
